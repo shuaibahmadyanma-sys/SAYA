@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 // These values come from your Supabase dashboard: Project Settings > API
 const VITE_SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || '';
 const VITE_SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-
+console.log("CHECKING LIVE KEYS:", import.meta.env.VITE_SUPABASE_URL);
 if (!VITE_SUPABASE_URL || !VITE_SUPABASE_ANON_KEY) {
   console.warn(
     '⚠️ Supabase credentials missing. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env file'
